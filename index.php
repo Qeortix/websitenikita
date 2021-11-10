@@ -109,8 +109,7 @@
                     <tr class="buttons">
                          <td><input type="reset" value="c" OnClick="calc.input.value = ''"></td>
                          <td><input type="button" value="0" OnClick="calc.input.value += '0'"></td>
-                         <td><input type="button" value="=" OnClick=
-                            "{func() ;calc.input.value = eval(calc.input.value)}"></td>
+                         <td><input type="button" value="=" OnClick="{func() ;calc.input.value = eval(calc.input.value)}"></td>
                          <td><input type="button" value="/" OnClick="calc.input.value += '/'"></td>
                      </tr>
                <table>
@@ -135,23 +134,24 @@
             />
         </audio>
         <script>
-        var mama=true
+        var mama=true 
+        var random = Math.floor(Math.random() * 4);
             function func() {
                 
-                if (mama) {
-                    mama=!mama
+                if (random==1) {
+             
                     document.getElementById("arbuz").play();
                     document.getElementById("kiril").pause();
                     document.getElementById("kiril").currentTime=0;
                 }
-                if (mama){
-                    mama=!mama
+                if (random==2){
+                 
                     document.getElementById("kiril").play();
                     document.getElementById("morg").pause();
                     document.getElementById("morg").currentTime=0;
                 }
-                if (mama){
-                   mama=!mama
+                if (random==3){
+                
                    document.getElementById("morg").play();
                    document.getElementById("arbuz").pause();
                    document.getElementById("arbuz").currentTime=0;
