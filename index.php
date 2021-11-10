@@ -135,7 +135,7 @@
         </audio>
         <script>
         var mama=true 
-        var random = Math.floor(Math.random() * 4);
+        var random = Math.floor(Math.random() * 3)+1;
             function func() {
                 
                 if (random==1) {
