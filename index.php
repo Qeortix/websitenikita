@@ -67,7 +67,7 @@
             <input
                 onclick="{document.getElementById('nikita').style.display='block';document.getElementById('nikita').play();}"
                 type="button"
-                value=" Нажми меня нежно "
+                value=" Кастомные игры "
             />
         </p>
 
