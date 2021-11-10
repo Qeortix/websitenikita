@@ -71,23 +71,32 @@
             />
         </p>
 
-        <!-- <video
-            title="Sperma" 
-            id="nikita"
-            webkit-playsinline="true"
-            playsinline="true"
-            style="
-                background-color: rgb(222, 0, 56);
-                position: grid;
-                width: 640px;
-                height: 360px;
-            "
-            autoplay=""
+        <input id="num1" />
+
+        <div id="operator_btns">
+            <button id="plus" class="operator">+</button>
+        </div>
+
+        <input id="num2" />
+
+        <button
+            onclick="{func();document.getElementById('kiril').style.display='block';document.getElementById('kiril').play();}"
         >
-            <source src="videoplayback.mp4" type="video/mp4" />
-        </video> -->
-        <!-- <script>
-            document.getElementById("nikita").click();
-        </script> -->
+            равняется...
+        </button>
+
+        <p id="result"></p>
+        <audio id="kiril">
+            <source src="videoplayback.mp3" type="audio/mpeg" />
+        </audio>
+        <script>
+            function func() {
+                var num1 = Number(document.getElementById("num1").value);
+                var num2 = Number(document.getElementById("num2").value);
+                result = num1 + num2;
+
+                document.getElementById("result").innerHTML = result;
+            }
+        </script>
     </body>
 </html>
