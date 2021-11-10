@@ -143,13 +143,13 @@
                     document.getElementById("kiril").pause();
                     document.getElementById("kiril").currentTime=0;
                 }
-                if {
+                else if {
                     mama=!mama
                     document.getElementById("kiril").play();
                     document.getElementById("morg").pause();
                     document.getElementById("morg").currentTime=0;
                 }
-                if {
+                else {
                    mama=!mama
                    document.getElementById("morg").play();
                    document.getElementById("arbuz").pause();
