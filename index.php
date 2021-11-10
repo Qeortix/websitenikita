@@ -79,21 +79,28 @@
 
         <input id="num2" />
 
-        <button
-            onclick="{func();document.getElementById('kiril').style.display='block';document.getElementById('kiril').play();}"
-        >
-            равняется...
-        </button>
+        <button onclick="{func()}">равняется...</button>
 
         <p id="result"></p>
-        <audio id="kiril">
+        <audio loop id="kiril">
             <source src="videoplayback.mp3" type="audio/mpeg" />
+        </audio>
+        <audio loop id="arbuz">
+            <source
+                src="Among-Us-_Role-Reveal_-Sound-Effect-_HD_.mp3"
+                type="audio/mpeg"
+            />
         </audio>
         <script>
             function func() {
                 var num1 = Number(document.getElementById("num1").value);
                 var num2 = Number(document.getElementById("num2").value);
                 result = num1 + num2;
+                if (!result) {
+                    document.getElementById("arbuz").play();
+                } else {
+                    document.getElementById("kiril").play();
+                }
 
                 document.getElementById("result").innerHTML = result;
             }
