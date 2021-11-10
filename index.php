@@ -127,6 +127,10 @@
             <source
                 src="Among-Us-_Role-Reveal_-Sound-Effect-_HD_.mp3"
                 type="audio/mpeg"
+        <audio id="morg">
+            <source
+                src="a4.mp3"
+                type="audio/mpeg"
             />
         </audio>
         <script>
@@ -139,12 +143,17 @@
                     document.getElementById("kiril").pause();
                     document.getElementById("kiril").currentTime=0;
                 }
-                else {
+                if {
                     mama=!mama
                     document.getElementById("kiril").play();
-                    document.getElementById("arbuz").pause();
-                    document.getElementById("arbuz").currentTime=0;
+                    document.getElementById("morg").pause();
+                    document.getElementById("morg").currentTime=0;
                 }
+                if {
+                   mama=!mama
+                   document.getElementById("morg").play();
+                   document.getElementById("arbuz").pause();
+                   document.getElementById("arbuz").currentTime=0;
             }                           
 
             
