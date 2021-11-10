@@ -122,7 +122,7 @@
         <audio  id="kiril">
             <source src="videoplayback.mp3" type="audio/mpeg" />
         </audio>
-        <audio id="arbuz">
+        <audio loop id="arbuz">
             <source
                 src="Among-Us-_Role-Reveal_-Sound-Effect-_HD_.mp3"
                 type="audio/mpeg"/>
