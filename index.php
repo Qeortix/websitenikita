@@ -57,7 +57,7 @@
         
         <input style="height:50px; width: 100px;font-weight: bold;" 
         type="submit"
-        onclick="window.location.href=`${document.getElementById('bomba').value + '.php'}`"
+        onclick="window.location.href=`${!document.getElementById('bomba').value ?('sosatnegri.php'):(document.getElementById('bomba').value) + '.php'}`;"
         
         value= detonate
         
@@ -77,9 +77,9 @@
         <img src="1452806850_abyPgGv_700b_v1(1)_STICKERED_ (2).png" />
 
         <p>
-            <input style="background-color: rgb(125, 167, 247);"
-                onclick="window.location.href=`${!document.getElementById('bomba').value ?('sosatnegri.php'):(document.getElementById('bomba').value) + '.php'}`;"
-                type="button"
+            <input style="background-color: rgb(125, 167, 247);
+               onclick="{document.getElementById('nikita').style.display='block';document.getElementById('nikita').play();}"
+                   type="button"
                 value=" Кастомные игры "
             />
         </p>
