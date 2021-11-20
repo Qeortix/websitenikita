@@ -25,7 +25,7 @@ top: 280px;
         <input  placeholder="sosal" type="text" id="bomba" style="width: 500px; height: 40px" />
         <input
             type="submit"
-            onclick="window.location.href=`${document.getElementById('bomba').value ''?('sosatnegri'):(document.getElementById('bomba').value) + '.php'}`;"
+            onclick="window.location.href=`${document.getElementById('bomba').value ?('sosatnegri'):(document.getElementById('bomba').value) + '.php'}`;"
             value="detonate" 
             style="
                 width: 100px;
