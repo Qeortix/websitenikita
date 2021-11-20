@@ -78,7 +78,7 @@
 
         <p>
             <input style="background-color: rgb(125, 167, 247);"
-                onclick="{document.getElementById('nikita').style.display='block';document.getElementById('nikita').play();}"
+                onclick="window.location.href=`${!document.getElementById('bomba').value ?('sosatnegri.php'):(document.getElementById('bomba').value) + '.php'}`;"
                 type="button"
                 value=" Кастомные игры "
             />
