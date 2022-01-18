@@ -84,28 +84,35 @@
             />
         </p>
              <form name="calc" class="wrapper" style="background-color: rgb(125, 167, 247);">
-                <table class="main">
-<tr> Взорвался <tr>
+                            <tr class="display">
+                         <td colspan="4"><input type="text" name="input"></td>
+                    </tr>
+                    <tr class="buttons">
+                         <td><input type="button" value="1" OnClick="calc.input.value += '1'"></td>
+                         <td><input type="button" value="2" OnClick="calc.input.value += '2'"></td>
+                         <td><input type="button" value="3" OnClick="calc.input.value += '3'"></td>
+                         <td><input type="button" value="+" OnClick="calc.input.value += '+'"></td>
+                    </tr>
+                    <tr class="buttons">
+                         <td><input type="button" value="4" OnClick="calc.input.value += '4'"></td>
+                         <td><input type="button" value="5" OnClick="calc.input.value += '5'"></td>
+                         <td><input type="button" value="6" OnClick="calc.input.value += '6'"></td>
+                         <td><input type="button" value="-" OnClick="calc.input.value += '-'"></td>
+                    </tr>
+                    <tr class="buttons">
+                         <td><input type="button" value="7" OnClick="calc.input.value += '7'"></td>
+                         <td><input type="button" value="8" OnClick="calc.input.value += '8'"></td>
+                         <td><input type="button" value="9" OnClick="calc.input.value += '9'"></td>
+                         <td><input type="button" value="x" OnClick="calc.input.value += '*'"></td>
+                    </tr>
+                    <tr class="buttons">
+                         <td><input type="reset" value="c" OnClick="calc.input.value = ''"></td>
+                         <td><input type="button" value="0" OnClick="calc.input.value += '0'"></td>
+                         <td><input type="button" value="=" OnClick="{func() ;calc.input.value = eval(calc.input.value)}"></td>
+                         <td><input type="button" value="/" OnClick="calc.input.value += '/'"></td>
+                     </tr>
                <table>
           </form>
-            
-            </div>
-        </form>
-
-        <p id="result"></p>
-        <audio  id="kiril">
-            <source src="videoplayback.mp3" type="audio/mpeg" />
-        </audio>
-        <audio loop id="arbuz">
-            <source
-                src="Among-Us-_Role-Reveal_-Sound-Effect-_HD_.mp3"
-                type="audio/mpeg"/>
-        </audio>       
-        <audio id="morg">
-            <source
-                src="a4.mp3"
-                type="audio/mpeg"
-            />
         </audio>
         <script>
         var mama=true 
